@@ -1,0 +1,79 @@
+/* MODAL */
+.modal-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgba(4, 9, 17, 0.7);
+    
+    display: flex;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+  background-color: var(--background);
+
+  border-radius: 0.8rem;
+
+  width: min(59rem, 90%);
+
+  margin: auto;
+
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+
+  padding: 6.4rem 1rem;
+}
+
+.modal h2{
+   color: var(--black);
+   font-weight: 700;
+
+   margin-bottom: 1.2rem;
+
+   font-size: 2.4rem;
+}
+
+.modal p{
+    color: var(--grey-dark);
+    margin-bottom: 1rem;
+}
+
+
+
+.modal form input{
+    border: 0.2rem solid var(--blue);
+    outline: none;
+
+    padding: 1.3rem 1.6rem;
+    margin-bottom: 4rem;
+
+    width: min(70%, 30.2rem);
+}
+
+.modal form .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.8rem;
+}
+
+.modal form .buttons > .button, .modal form .buttons > button{
+    padding: 1.3rem 3.2rem;
+}
+
+.modal form .buttons .cancel:hover{
+    filter: none;
+}

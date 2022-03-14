@@ -1,0 +1,35 @@
+
+/* ERRO */
+.error{
+    width: 100vw;
+
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+}
+
+.error img{
+    width: 30%;
+    min-width: 15rem;
+}
+
+.error h2{
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    margin-top: 2rem;
+}
+
+.error p{
+    color: var(--grey-dark);
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding: 2rem;
+
+    text-align: center;
+}
